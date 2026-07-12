@@ -17,6 +17,15 @@ enableEmoji = true
     disable = false
 
 [params]
+  google_fonts = [
+    ["Inter", "300, 400, 600, 700"],
+    ["Fira Code", "500, 700"]
+  ]
+
+  sans_serif_font = "Inter"
+  secondary_font  = "Inter"
+  mono_font       = "Fira Code"
+
   [params.footer]
     copyright = "© :YEAR: The Fyne.io community. Please consider [**sponsoring**](https://fyne.io/sponsor/) our work."
 
