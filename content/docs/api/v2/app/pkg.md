@@ -21,9 +21,7 @@ aliases:
 - /api/v2.6/app/pkg
 - /api/v2.6/app/pkg.html
 - /api/v2.7/app/pkg
-- /api/v2.7/app/pkg.html (package)
-
-aliases:
+- /api/v2.7/app/pkg.html
 - /api/app
 - /api/app.html
 - /api/v2.0/app

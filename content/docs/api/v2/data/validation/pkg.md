@@ -21,9 +21,7 @@ aliases:
 - /api/v2.6/data/validation/pkg
 - /api/v2.6/data/validation/pkg.html
 - /api/v2.7/data/validation/pkg
-- /api/v2.7/data/validation/pkg.html (package)
-
-aliases:
+- /api/v2.7/data/validation/pkg.html
 - /api/data/validation
 - /api/data/validation.html
 - /api/v2.0/data/validation

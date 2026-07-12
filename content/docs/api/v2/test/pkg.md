@@ -21,9 +21,7 @@ aliases:
 - /api/v2.6/test/pkg
 - /api/v2.6/test/pkg.html
 - /api/v2.7/test/pkg
-- /api/v2.7/test/pkg.html (package)
-
-aliases:
+- /api/v2.7/test/pkg.html
 - /api/test
 - /api/test.html
 - /api/v2.0/test

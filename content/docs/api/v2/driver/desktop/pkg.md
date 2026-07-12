@@ -21,9 +21,7 @@ aliases:
 - /api/v2.6/driver/desktop/pkg
 - /api/v2.6/driver/desktop/pkg.html
 - /api/v2.7/driver/desktop/pkg
-- /api/v2.7/driver/desktop/pkg.html (package)
-
-aliases:
+- /api/v2.7/driver/desktop/pkg.html
 - /api/driver/desktop
 - /api/driver/desktop.html
 - /api/v2.0/driver/desktop

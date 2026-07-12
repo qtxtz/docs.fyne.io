@@ -21,9 +21,7 @@ aliases:
 - /api/v2.6/canvas/pkg
 - /api/v2.6/canvas/pkg.html
 - /api/v2.7/canvas/pkg
-- /api/v2.7/canvas/pkg.html (package)
-
-aliases:
+- /api/v2.7/canvas/pkg.html
 - /api/canvas
 - /api/canvas.html
 - /api/v2.0/canvas

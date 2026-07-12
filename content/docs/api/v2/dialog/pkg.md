@@ -21,9 +21,7 @@ aliases:
 - /api/v2.6/dialog/pkg
 - /api/v2.6/dialog/pkg.html
 - /api/v2.7/dialog/pkg
-- /api/v2.7/dialog/pkg.html (package)
-
-aliases:
+- /api/v2.7/dialog/pkg.html
 - /api/dialog
 - /api/dialog.html
 - /api/v2.0/dialog

@@ -21,9 +21,7 @@ aliases:
 - /api/v2.6/layout/pkg
 - /api/v2.6/layout/pkg.html
 - /api/v2.7/layout/pkg
-- /api/v2.7/layout/pkg.html (package)
-
-aliases:
+- /api/v2.7/layout/pkg.html
 - /api/layout
 - /api/layout.html
 - /api/v2.0/layout

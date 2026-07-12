@@ -21,9 +21,7 @@ aliases:
 - /api/v2.6/lang/pkg
 - /api/v2.6/lang/pkg.html
 - /api/v2.7/lang/pkg
-- /api/v2.7/lang/pkg.html (package)
-
-aliases:
+- /api/v2.7/lang/pkg.html
 - /api/lang
 - /api/lang.html
 - /api/v2.0/lang

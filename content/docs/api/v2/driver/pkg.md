@@ -21,9 +21,7 @@ aliases:
 - /api/v2.6/driver/pkg
 - /api/v2.6/driver/pkg.html
 - /api/v2.7/driver/pkg
-- /api/v2.7/driver/pkg.html (package)
-
-aliases:
+- /api/v2.7/driver/pkg.html
 - /api/driver
 - /api/driver.html
 - /api/v2.0/driver

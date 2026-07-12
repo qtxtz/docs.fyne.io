@@ -21,9 +21,7 @@ aliases:
 - /api/v2.6/driver/mobile/pkg
 - /api/v2.6/driver/mobile/pkg.html
 - /api/v2.7/driver/mobile/pkg
-- /api/v2.7/driver/mobile/pkg.html (package)
-
-aliases:
+- /api/v2.7/driver/mobile/pkg.html
 - /api/driver/mobile
 - /api/driver/mobile.html
 - /api/v2.0/driver/mobile

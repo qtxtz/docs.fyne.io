@@ -30,6 +30,10 @@ for DIR in $DIRS; do
 	echo -e "---\ntitle: Fyne API\nslug: fyne\n---\n" > $PREFIX/fyne/_index.md
   fi
 
+  # drop any pkg.md from a previous run, else the glob below picks it up
+  # alongside index.md and the new pkg.md gets processed (and aliased) twice
+  rm -f "$PREFIX/$PKG/pkg.md"
+
   for FILE in $PREFIX/$PKG/*.md; do
     NAME=`basename $FILE | sed 's/\.md//'`
 	PKGPATH="$PKG\/$NAME"

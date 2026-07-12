@@ -21,9 +21,7 @@ aliases:
 - /api/v2.6/data/binding/pkg
 - /api/v2.6/data/binding/pkg.html
 - /api/v2.7/data/binding/pkg
-- /api/v2.7/data/binding/pkg.html (package)
-
-aliases:
+- /api/v2.7/data/binding/pkg.html
 - /api/data/binding
 - /api/data/binding.html
 - /api/v2.0/data/binding

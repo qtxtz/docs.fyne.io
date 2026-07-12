@@ -21,9 +21,7 @@ aliases:
 - /api/v2.6/theme/pkg
 - /api/v2.6/theme/pkg.html
 - /api/v2.7/theme/pkg
-- /api/v2.7/theme/pkg.html (package)
-
-aliases:
+- /api/v2.7/theme/pkg.html
 - /api/theme
 - /api/theme.html
 - /api/v2.0/theme

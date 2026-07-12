@@ -21,9 +21,7 @@ aliases:
 - /api/v2.6/driver/embedded/pkg
 - /api/v2.6/driver/embedded/pkg.html
 - /api/v2.7/driver/embedded/pkg
-- /api/v2.7/driver/embedded/pkg.html (package)
-
-aliases:
+- /api/v2.7/driver/embedded/pkg.html
 - /api/driver/embedded
 - /api/driver/embedded.html
 - /api/v2.0/driver/embedded

@@ -21,9 +21,7 @@ aliases:
 - /api/v2.6/storage/repository/pkg
 - /api/v2.6/storage/repository/pkg.html
 - /api/v2.7/storage/repository/pkg
-- /api/v2.7/storage/repository/pkg.html (package)
-
-aliases:
+- /api/v2.7/storage/repository/pkg.html
 - /api/storage/repository
 - /api/storage/repository.html
 - /api/v2.0/storage/repository
