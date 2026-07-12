@@ -68,7 +68,7 @@ You will need to install Go, GCC and the graphics library header files using you
 ### Debian, Ubuntu and Raspberry Pi OS
 
 ```sh
-sudo apt-get install golang gcc libgl1-mesa-dev xorg-dev libxkbcommon-dev
+sudo apt-get install golang gcc libgl1-mesa-dev xorg-dev libwayland-dev libxkbcommon-dev
 ```
 
 ### Fedora
@@ -80,19 +80,19 @@ sudo dnf install golang golang-misc gcc libXcursor-devel libXrandr-devel mesa-li
 ### Arch Linux
 
 ```sh
-sudo pacman -S go xorg-server-devel libxcursor libxrandr libxinerama libxi libxkbcommon
+sudo pacman -S go xorg-server-devel libxcursor libxrandr libxinerama libxi wayland libxkbcommon
 ```
 
 ### Solus
 
 ```sh
-sudo eopkg it -c system.devel golang mesalib-devel libxrandr-devel libxcursor-devel libxi-devel libxinerama-devel libxkbcommon-devel
+sudo eopkg it -c system.devel golang mesalib-devel libxrandr-devel libxcursor-devel libxi-devel libxinerama-devel wayland-devel libxkbcommon-devel
 ```
 
 ### openSUSE
 
 ```sh
-sudo zypper install go gcc libXcursor-devel libXrandr-devel Mesa-libGL-devel libXi-devel libXinerama-devel libXxf86vm-devel libxkbcommon-devel
+sudo zypper install go gcc libXcursor-devel libXrandr-devel Mesa-libGL-devel libXi-devel libXinerama-devel libXxf86vm-devel wayland-devel libxkbcommon-devel
 ```
 
 ### Void Linux
@@ -121,19 +121,19 @@ You will need to install Go, GCC and the graphics library header files using the
 ### FreeBSD
 
 ```sh
-sudo pkg install go gcc xorg pkgconf
+sudo pkg install go gcc xorg pkgconf wayland libxkbcommon
 ```
 
 ### OpenBSD
 
 ```sh
-sudo pkg_add go
+sudo pkg_add go wayland libxkbcommon
 ```
 
 ### NetBSD
 
 ```sh
-sudo pkgin install go pkgconf
+sudo pkgin install go pkgconf wayland libxkbcommon
 ```
 
 {{% /tab %}}
