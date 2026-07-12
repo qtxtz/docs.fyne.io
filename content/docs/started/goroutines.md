@@ -69,5 +69,15 @@ When calling [fyne.Do](/api/v2/fyne/doubletappable/#type--do) the code will exec
 
 To do this another function, [fyne.DoAndWait](/api/v2/fyne/pkg/#func--doandwait) is useful. This takes the same parameter as the `Do` version above, but it will not return until the update is complete. This means the next line in your app will happen after the user interface is updated - very useful if you want to avoid potential issues with accessing shared resources concurrently.
 
+## Migrating
+
+This threading model will be default from v2.9.0. This means that in v2.8 you still need to opt-in (which you should do for performance).
+To do this (and make warning messages go away) be sure to turn on the migration when you are ready:
+
+```
+[Migrations]
+  fyneDo = true
+```
+
 {{% youtube "choFGqOPzDI" %}}
 
