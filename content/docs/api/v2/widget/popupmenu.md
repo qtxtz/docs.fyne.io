@@ -90,6 +90,17 @@ func (p *PopUpMenu) Resize(size fyne.Size)
 ```
 Resize changes the size of the pop-up menu.
 
+#### func (*PopUpMenu) SetCanvas
+
+```go
+func (p *PopUpMenu) SetCanvas(c fyne.Canvas)
+```
+SetCanvas allows a popup menu to be re-used on a different canvas.
+
+
+<div class="since">Since: <code>
+2.8</code></div>
+
 #### func (*PopUpMenu) Show
 
 ```go

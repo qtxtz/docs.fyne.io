@@ -1,7 +1,27 @@
 ---
 tags: [api]
 title: layout (package)
-slug: (package)
+slug: pkg
+
+aliases:
+- /api/layout/pkg
+- /api/layout/pkg.html
+- /api/v2.0/layout/pkg
+- /api/v2.0/layout/pkg.html
+- /api/v2.1/layout/pkg
+- /api/v2.1/layout/pkg.html
+- /api/v2.2/layout/pkg
+- /api/v2.2/layout/pkg.html
+- /api/v2.3/layout/pkg
+- /api/v2.3/layout/pkg.html
+- /api/v2.4/layout/pkg
+- /api/v2.4/layout/pkg.html
+- /api/v2.5/layout/pkg
+- /api/v2.5/layout/pkg.html
+- /api/v2.6/layout/pkg
+- /api/v2.6/layout/pkg.html
+- /api/v2.7/layout/pkg
+- /api/v2.7/layout/pkg.html (package)
 
 aliases:
 - /api/layout

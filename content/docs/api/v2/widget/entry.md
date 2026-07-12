@@ -45,6 +45,10 @@ type Entry struct {
 	TextStyle   fyne.TextStyle
 	PlaceHolder string
 	OnChanged   func(string) `json:"-"`
+
+	// OnSubmitted will be called when the user presses Enter/Return (for a single line entry).
+	// MultiLine entries will be submitted when Shift+Enter (or Return) are pressed.
+	//
 	// Since: 2.0
 	OnSubmitted func(string) `json:"-"`
 	Password    bool
@@ -223,6 +227,17 @@ func (e *Entry) FocusLost()
 ```
 FocusLost is called when the Entry has had focus removed.
 
+#### func (*Entry) HasValue
+
+```go
+func (e *Entry) HasValue() bool
+```
+HasValue is used for required validation and returns true if the text is not empty.
+
+
+<div class="since">Since: <code>
+2.8</code></div>
+
 #### func (*Entry) Hide
 
 ```go
@@ -317,6 +332,17 @@ SetMinRowsVisible forces a multi-line entry to show `count` number of rows witho
 
 <div class="since">Since: <code>
 2.2</code></div>
+
+#### func (*Entry) SetOnRequiredChanged
+
+```go
+func (e *Entry) SetOnRequiredChanged(callback func(bool))
+```
+SetOnRequiredChanged is intended for parent widgets or containers to hook into the required state. The function might be overwritten by a parent that cares about child state (e.g. widget.Form).
+
+
+<div class="since">Since: <code>
+2.8</code></div>
 
 #### func (*Entry) SetOnValidationChanged
 
@@ -441,6 +467,6 @@ Undo un-does the last modifying user-action.
 #### func (*Entry) Validate
 
 ```go
-func (e *Entry) Validate() error
+func (e *Entry) Validate() (err error)
 ```
 Validate validates the current text in the widget.

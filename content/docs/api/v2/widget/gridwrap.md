@@ -57,9 +57,15 @@ type GridWrap struct {
 	// in the GridWrap has been selected.
 	OnSelected func(id GridWrapItemID) `json:"-"`
 
-	// OnSelected is a callback to be notified when a given item
+	// OnUnselected is a callback to be notified when a given item
 	// in the GridWrap has been unselected.
 	OnUnselected func(id GridWrapItemID) `json:"-"`
+
+	// OnHighlighted is a callback to be notified when a given item
+	// in the GridWrap has been highlighted by keyboard navigation and mouse hover
+	//
+	// Since: 2.8
+	OnHighlighted func(id GridWrapItemID) `json:"-"`
 }
 ```
 
@@ -130,12 +136,30 @@ func (l *GridWrap) GetScrollOffset() float32
 ```
 GetScrollOffset returns the current scroll offset position
 
+#### func (*GridWrap) Highlight
+
+```go
+func (l *GridWrap) Highlight(id GridWrapItemID)
+```
+Highlight scrolls to the item represented by id and highlights it
+
+
+<div class="since">Since: <code>
+2.8</code></div>
+
 #### func (*GridWrap) MinSize
 
 ```go
 func (l *GridWrap) MinSize() fyne.Size
 ```
 MinSize returns the size that this widget should not shrink below.
+
+#### func (*GridWrap) Refresh
+
+```go
+func (l *GridWrap) Refresh()
+```
+Refresh causes this GridWrap to be redrawn in its current state.
 
 #### func (*GridWrap) RefreshItem
 

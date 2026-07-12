@@ -54,6 +54,12 @@ type Tree struct {
 	OnSelected     func(uid TreeNodeID)                                      `json:"-"` // Called when the Node with the given TreeNodeID is selected.
 	OnUnselected   func(uid TreeNodeID)                                      `json:"-"` // Called when the Node with the given TreeNodeID is unselected.
 	UpdateNode     func(uid TreeNodeID, branch bool, node fyne.CanvasObject) `json:"-"` // Called to update the given CanvasObject to represent the data at the given TreeNodeID
+
+	// OnHighlighted is a callback to be notified when a given item
+	// in the tree has been highlighted by keyboard navigation and mouse hover
+	//
+	// Since: 2.8
+	OnHighlighted func(id TreeNodeID) `json:"-"`
 }
 ```
 
@@ -130,6 +136,17 @@ FocusGained is called after this Tree has gained focus.
 func (t *Tree) FocusLost()
 ```
 FocusLost is called after this Tree has lost focus.
+
+#### func (*Tree) Highlight
+
+```go
+func (t *Tree) Highlight(uid TreeNodeID)
+```
+Highlight scrolls to the item represented by id and highlights it
+
+
+<div class="since">Since: <code>
+2.8</code></div>
 
 #### func (*Tree) IsBranchOpen
 

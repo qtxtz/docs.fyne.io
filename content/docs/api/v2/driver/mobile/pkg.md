@@ -1,7 +1,27 @@
 ---
 tags: [api]
 title: mobile (package)
-slug: (package)
+slug: pkg
+
+aliases:
+- /api/driver/mobile/pkg
+- /api/driver/mobile/pkg.html
+- /api/v2.0/driver/mobile/pkg
+- /api/v2.0/driver/mobile/pkg.html
+- /api/v2.1/driver/mobile/pkg
+- /api/v2.1/driver/mobile/pkg.html
+- /api/v2.2/driver/mobile/pkg
+- /api/v2.2/driver/mobile/pkg.html
+- /api/v2.3/driver/mobile/pkg
+- /api/v2.3/driver/mobile/pkg.html
+- /api/v2.4/driver/mobile/pkg
+- /api/v2.4/driver/mobile/pkg.html
+- /api/v2.5/driver/mobile/pkg
+- /api/v2.5/driver/mobile/pkg.html
+- /api/v2.6/driver/mobile/pkg
+- /api/v2.6/driver/mobile/pkg.html
+- /api/v2.7/driver/mobile/pkg
+- /api/v2.7/driver/mobile/pkg.html (package)
 
 aliases:
 - /api/driver/mobile
@@ -51,5 +71,6 @@ const (
  * [Driver](driver.html)
  * [KeyboardType](keyboardtype.html)
  * [Keyboardable](keyboardable.html)
+ * [Movable](movable.html)
  * [TouchEvent](touchevent.html)
  * [Touchable](touchable.html)

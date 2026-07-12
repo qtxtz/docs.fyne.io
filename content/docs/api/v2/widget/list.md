@@ -57,7 +57,7 @@ type List struct {
 	// in the list has been selected.
 	OnSelected func(id ListItemID) `json:"-"`
 
-	// OnSelected is a callback to be notified when a given item
+	// OnUnselected is a callback to be notified when a given item
 	// in the list has been unselected.
 	OnUnselected func(id ListItemID) `json:"-"`
 
@@ -65,6 +65,12 @@ type List struct {
 	//
 	// Since: 2.5
 	HideSeparators bool
+
+	// OnHighlighted is a callback to be notified when a given item
+	// in the list has been highlighted by keyboard navigation and mouse hover
+	//
+	// Since: 2.8
+	OnHighlighted func(id ListItemID) `json:"-"`
 }
 ```
 
@@ -95,6 +101,17 @@ NewListWithData creates a new list widget that will display the contents of the 
 
 <div class="since">Since: <code>
 2.0</code></div>
+
+#### func (*List) Bind
+
+```go
+func (l *List) Bind(data binding.DataList, update func(di binding.DataItem, o fyne.CanvasObject))
+```
+Bind connects the specified data source to this List. The current contents of the DataList will be used to determine length and content any changes in the data will cause the widget to update. The same types of item will be used but the replacement `update` function will be called when an item should update. Upon binding all items will update.
+
+
+<div class="since">Since: <code>
+2.8</code></div>
 
 #### func (*List) CreateRenderer
 
@@ -128,12 +145,30 @@ GetScrollOffset returns the current scroll offset position
 <div class="since">Since: <code>
 2.5</code></div>
 
+#### func (*List) Highlight
+
+```go
+func (l *List) Highlight(id ListItemID)
+```
+Highlight scrolls to the item represented by id and highlights it
+
+
+<div class="since">Since: <code>
+2.8</code></div>
+
 #### func (*List) MinSize
 
 ```go
 func (l *List) MinSize() fyne.Size
 ```
 MinSize returns the size that this widget should not shrink below.
+
+#### func (*List) Refresh
+
+```go
+func (l *List) Refresh()
+```
+Refresh causes this List to be redrawn in its current state
 
 #### func (*List) RefreshItem
 
@@ -228,6 +263,17 @@ TypedKey is called if a key event happens while this List is focused.
 func (l *List) TypedRune(_ rune)
 ```
 TypedRune is called if a text event happens while this List is focused.
+
+#### func (*List) Unbind
+
+```go
+func (l *List) Unbind()
+```
+Unbind disconnects any configured data source from this List. The contents will return to what was displayed before binding. Upon unbinding all items will update.
+
+
+<div class="since">Since: <code>
+2.8</code></div>
 
 #### func (*List) Unselect
 

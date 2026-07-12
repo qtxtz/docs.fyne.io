@@ -50,6 +50,16 @@ type InnerWindow struct {
 	//
 	// Since: 2.6
 	Alignment widget.ButtonAlign
+
+	// Title returns the string that is currently shown in the top of the window border.
+	//
+	// Since: 2.8
+	Title string
+
+	// Content returns the current `CanvasObject` that makes the content of this inner window.
+	//
+	// Since: 2.8
+	Content *fyne.Container
 }
 ```
 
@@ -81,6 +91,17 @@ func (w *InnerWindow) Close()
 ```go
 func (w *InnerWindow) CreateRenderer() fyne.WidgetRenderer
 ```
+
+#### func (*InnerWindow) SetActive
+
+```go
+func (w *InnerWindow) SetActive(active bool)
+```
+SetActive tells the window whether it is the currently active (top) window. A new window is assumed to be active.
+
+
+<div class="since">Since: <code>
+2.8</code></div>
 
 #### func (*InnerWindow) SetContent
 

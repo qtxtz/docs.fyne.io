@@ -46,6 +46,11 @@ type HyperlinkSegment struct {
 	//
 	// Since: 2.4
 	OnTapped func() `json:"-"`
+
+	// Since 2.8
+	TextStyle fyne.TextStyle
+	// Since 2.8
+	SizeName fyne.ThemeSizeName // The theme name of the text size to use, if blank will be the standard text size
 }
 ```
 

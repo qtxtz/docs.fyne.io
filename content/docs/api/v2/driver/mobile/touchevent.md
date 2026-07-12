@@ -39,6 +39,12 @@ import "fyne.io/fyne/v2/driver/mobile"
 ```go
 type TouchEvent struct {
 	fyne.PointEvent
+
+	// ID represents the current ID of this touch, used to differentiate multiple fingers during a gesture.
+	// The ID value may be re-used after that touch is released from the device (via TouchUp or TouchCancel).
+	//
+	// Since: 2.8
+	ID int
 }
 ```
 

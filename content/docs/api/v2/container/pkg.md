@@ -1,7 +1,27 @@
 ---
 tags: [api]
 title: container (package)
-slug: (package)
+slug: pkg
+
+aliases:
+- /api/container/pkg
+- /api/container/pkg.html
+- /api/v2.0/container/pkg
+- /api/v2.0/container/pkg.html
+- /api/v2.1/container/pkg
+- /api/v2.1/container/pkg.html
+- /api/v2.2/container/pkg
+- /api/v2.2/container/pkg.html
+- /api/v2.3/container/pkg
+- /api/v2.3/container/pkg.html
+- /api/v2.4/container/pkg
+- /api/v2.4/container/pkg.html
+- /api/v2.5/container/pkg
+- /api/v2.5/container/pkg.html
+- /api/v2.6/container/pkg
+- /api/v2.6/container/pkg.html
+- /api/v2.7/container/pkg
+- /api/v2.7/container/pkg.html (package)
 
 aliases:
 - /api/container

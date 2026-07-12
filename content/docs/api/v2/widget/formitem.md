@@ -43,6 +43,9 @@ type FormItem struct {
 
 	// Since: 2.0
 	HintText string
+
+	// Since: 2.8
+	Required bool
 }
 ```
 

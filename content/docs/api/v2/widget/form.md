@@ -51,6 +51,11 @@ type Form struct {
 	//
 	// Since: 2.5
 	Orientation Orientation
+
+	// Validator allows a form to handle some overall validation before it will enable Submit.
+	//
+	// Since: 2.8
+	Validator func() error `json:"-"`
 }
 ```
 
@@ -130,6 +135,17 @@ MinSize returns the size that this widget should not shrink below
 func (f *Form) Refresh()
 ```
 Refresh updates the widget state when requested.
+
+#### func (*Form) RemoveItem
+
+```go
+func (f *Form) RemoveItem(item *FormItem)
+```
+RemoveItem removes a specified item from the form.
+
+
+<div class="since">Since: <code>
+2.8</code></div>
 
 #### func (*Form) SetOnValidationChanged
 

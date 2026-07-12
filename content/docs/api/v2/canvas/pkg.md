@@ -1,7 +1,27 @@
 ---
 tags: [api]
 title: canvas (package)
-slug: (package)
+slug: pkg
+
+aliases:
+- /api/canvas/pkg
+- /api/canvas/pkg.html
+- /api/v2.0/canvas/pkg
+- /api/v2.0/canvas/pkg.html
+- /api/v2.1/canvas/pkg
+- /api/v2.1/canvas/pkg.html
+- /api/v2.2/canvas/pkg
+- /api/v2.2/canvas/pkg.html
+- /api/v2.3/canvas/pkg
+- /api/v2.3/canvas/pkg.html
+- /api/v2.4/canvas/pkg
+- /api/v2.4/canvas/pkg.html
+- /api/v2.5/canvas/pkg
+- /api/v2.5/canvas/pkg.html
+- /api/v2.6/canvas/pkg
+- /api/v2.6/canvas/pkg.html
+- /api/v2.7/canvas/pkg
+- /api/v2.7/canvas/pkg.html (package)
 
 aliases:
 - /api/canvas
@@ -82,6 +102,17 @@ NewPositionAnimation sets up a new animation that will transition from the start
 <div class="since">Since: <code>
 2.0</code></div>
 
+#### func  NewShaderAnimation
+
+```go
+func NewShaderAnimation(s *Shader) *fyne.Animation
+```
+NewShaderAnimation sets up a new animation that continuously redraws the given shader, advancing its "time" uniform each frame so the fragment shader can produce motion. You should call Start() on the returned animation to begin and Stop() to freeze the shader at its current frame. Stopping and starting the same animation again resumes from where it left off, without counting the paused time.
+
+
+<div class="since">Since: <code>
+2.8</code></div>
+
 #### func  NewSizeAnimation
 
 ```go
@@ -115,8 +146,12 @@ Refresh instructs the containing canvas to refresh the specified obj.
 
 #### types
 
+ * [ArbitraryPolygon](arbitrarypolygon.html)
  * [Arc](arc.html)
+ * [BezierCurve](beziercurve.html)
+ * [Blur](blur.html)
  * [Circle](circle.html)
+ * [Ellipse](ellipse.html)
  * [Image](image.html)
  * [ImageFill](imagefill.html)
  * [ImageScale](imagescale.html)
@@ -126,4 +161,8 @@ Refresh instructs the containing canvas to refresh the specified obj.
  * [RadialGradient](radialgradient.html)
  * [Raster](raster.html)
  * [Rectangle](rectangle.html)
+ * [RegularPolygon](regularpolygon.html)
+ * [Shader](shader.html)
+ * [Shadow](shadow.html)
+ * [ShadowVariant](shadowvariant.html)
  * [Text](text.html)

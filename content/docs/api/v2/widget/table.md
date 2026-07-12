@@ -86,6 +86,12 @@ type Table struct {
 	//
 	// Since: 2.5
 	HideSeparators bool
+
+	// OnHighlighted is a callback to be notified when a given item
+	// in the table has been highlighted by keyboard navigation and mouse hover
+	//
+	// Since: 2.8
+	OnHighlighted func(id TableCellID) `json:"-"`
 }
 ```
 
@@ -155,6 +161,17 @@ FocusGained is called after this table has gained focus.
 func (t *Table) FocusLost()
 ```
 FocusLost is called after this Table has lost focus.
+
+#### func (*Table) Highlight
+
+```go
+func (t *Table) Highlight(id TableCellID)
+```
+Highlight scrolls to the item represented by id and highlights it
+
+
+<div class="since">Since: <code>
+2.8</code></div>
 
 #### func (*Table) MouseDown
 

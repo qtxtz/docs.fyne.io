@@ -80,6 +80,28 @@ NewContainerWithoutLayout returns a new [Container] instance holding the specifi
 <div class="deprecated">
 Deprecated: Use [fyne.io/fyne/v2/container.NewWithoutLayout] instead.</div>
 
+#### func (*Container) AccessibilityLabel
+
+```go
+func (c *Container) AccessibilityLabel() string
+```
+AccessibilityLabel for a container just returns "Container".
+
+
+<div class="since">Since: <code>
+2.8</code></div>
+
+#### func (*Container) AccessibilityRole
+
+```go
+func (c *Container) AccessibilityRole() AccessibleRole
+```
+AccessibilityRole for a container is AccessibleRoleContainer.
+
+
+<div class="since">Since: <code>
+2.8</code></div>
+
 #### func (*Container) Add
 
 ```go

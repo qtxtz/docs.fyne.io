@@ -45,6 +45,17 @@ type Resource interface {
 
 Resource represents a single binary resource, such as an image or font. A resource has an identifying name and byte array content. The serialised path of a resource can be obtained which may result in a blocking filesystem write operation.
 
+#### func  CacheResourceFromURLString
+
+```go
+func CacheResourceFromURLString(urlStr string) (Resource, error)
+```
+CacheResourceFromURLString creates a new [StaticResource] in memory using the body of the specified URL. It also adds the content to our cache so that future requests for this resource will be available locally instead of downloaded from the URL.
+
+
+<div class="since">Since: <code>
+2.8</code></div>
+
 #### func  LoadResourceFromPath
 
 ```go

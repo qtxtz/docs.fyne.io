@@ -1,7 +1,27 @@
 ---
 tags: [api]
 title: dialog (package)
-slug: (package)
+slug: pkg
+
+aliases:
+- /api/dialog/pkg
+- /api/dialog/pkg.html
+- /api/v2.0/dialog/pkg
+- /api/v2.0/dialog/pkg.html
+- /api/v2.1/dialog/pkg
+- /api/v2.1/dialog/pkg.html
+- /api/v2.2/dialog/pkg
+- /api/v2.2/dialog/pkg.html
+- /api/v2.3/dialog/pkg
+- /api/v2.3/dialog/pkg.html
+- /api/v2.4/dialog/pkg
+- /api/v2.4/dialog/pkg.html
+- /api/v2.5/dialog/pkg
+- /api/v2.5/dialog/pkg.html
+- /api/v2.6/dialog/pkg
+- /api/v2.6/dialog/pkg.html
+- /api/v2.7/dialog/pkg
+- /api/v2.7/dialog/pkg.html (package)
 
 aliases:
 - /api/dialog

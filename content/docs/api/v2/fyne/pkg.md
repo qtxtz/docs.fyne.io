@@ -5,7 +5,7 @@ slug: (package)
 
 aliases:
 - /api/
-- /api/v2/
+- /api/.html
 - /api/v2.0/
 - /api/v2.0/.html
 - /api/v2.1/
@@ -175,11 +175,14 @@ SetCurrentApp is an internal function to set the app instance currently running.
 
 #### types
 
+ * [Accessible](accessible.html)
+ * [AccessibleRole](accessiblerole.html)
  * [Animation](animation.html)
  * [AnimationCurve](animationcurve.html)
  * [App](app.html)
  * [AppMetadata](appmetadata.html)
  * [BuildType](buildtype.html)
+ * [Cache](cache.html)
  * [Canvas](canvas.html)
  * [CanvasObject](canvasobject.html)
  * [Clipboard](clipboard.html)
@@ -214,7 +217,9 @@ SetCurrentApp is an internal function to set the app instance currently running.
  * [PointEvent](pointevent.html)
  * [Position](position.html)
  * [Preferences](preferences.html)
+ * [Requireable](requireable.html)
  * [Resource](resource.html)
+ * [ScheduledNotification](schedulednotification.html)
  * [ScrollDirection](scrolldirection.html)
  * [ScrollEvent](scrollevent.html)
  * [Scrollable](scrollable.html)

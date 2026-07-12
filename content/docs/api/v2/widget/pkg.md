@@ -1,7 +1,27 @@
 ---
 tags: [api]
 title: widget (package)
-slug: (package)
+slug: pkg
+
+aliases:
+- /api/widget/pkg
+- /api/widget/pkg.html
+- /api/v2.0/widget/pkg
+- /api/v2.0/widget/pkg.html
+- /api/v2.1/widget/pkg
+- /api/v2.1/widget/pkg.html
+- /api/v2.2/widget/pkg
+- /api/v2.2/widget/pkg.html
+- /api/v2.3/widget/pkg
+- /api/v2.3/widget/pkg.html
+- /api/v2.4/widget/pkg
+- /api/v2.4/widget/pkg.html
+- /api/v2.5/widget/pkg
+- /api/v2.5/widget/pkg.html
+- /api/v2.6/widget/pkg
+- /api/v2.6/widget/pkg.html
+- /api/v2.7/widget/pkg
+- /api/v2.7/widget/pkg.html (package)
 
 aliases:
 - /api/widget
@@ -43,7 +63,7 @@ var (
 	// Since: 2.1
 	RichTextStyleBlockquote = RichTextStyle{
 		ColorName: theme.ColorNameForeground,
-		Inline:    false,
+		Inline:    true,
 		SizeName:  theme.SizeNameText,
 		TextStyle: fyne.TextStyle{Italic: true},
 	}
@@ -79,7 +99,7 @@ var (
 	// Since: 2.1
 	RichTextStyleHeading = RichTextStyle{
 		ColorName: theme.ColorNameForeground,
-		Inline:    false,
+		Inline:    true,
 		SizeName:  theme.SizeNameHeadingText,
 		TextStyle: fyne.TextStyle{Bold: true},
 	}
@@ -121,7 +141,7 @@ var (
 	// Since: 2.1
 	RichTextStyleSubHeading = RichTextStyle{
 		ColorName: theme.ColorNameForeground,
-		Inline:    false,
+		Inline:    true,
 		SizeName:  theme.SizeNameSubHeadingText,
 		TextStyle: fyne.TextStyle{Bold: true},
 	}
@@ -199,7 +219,9 @@ Since 2.4
  * [Calendar](calendar.html)
  * [Card](card.html)
  * [Check](check.html)
+ * [CheckBoxSegment](checkboxsegment.html)
  * [CheckGroup](checkgroup.html)
+ * [CodeBlockSegment](codeblocksegment.html)
  * [CustomTextGridStyle](customtextgridstyle.html)
  * [DateEntry](dateentry.html)
  * [DisableableWidget](disableablewidget.html)
@@ -237,6 +259,7 @@ Since 2.4
  * [Slider](slider.html)
  * [Table](table.html)
  * [TableCellID](tablecellid.html)
+ * [TableSegment](tablesegment.html)
  * [TextGrid](textgrid.html)
  * [TextGridCell](textgridcell.html)
  * [TextGridRow](textgridrow.html)

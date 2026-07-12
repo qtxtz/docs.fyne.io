@@ -1,7 +1,27 @@
 ---
 tags: [api]
 title: binding (package)
-slug: (package)
+slug: pkg
+
+aliases:
+- /api/data/binding/pkg
+- /api/data/binding/pkg.html
+- /api/v2.0/data/binding/pkg
+- /api/v2.0/data/binding/pkg.html
+- /api/v2.1/data/binding/pkg
+- /api/v2.1/data/binding/pkg.html
+- /api/v2.2/data/binding/pkg
+- /api/v2.2/data/binding/pkg.html
+- /api/v2.3/data/binding/pkg
+- /api/v2.3/data/binding/pkg.html
+- /api/v2.4/data/binding/pkg
+- /api/v2.4/data/binding/pkg.html
+- /api/v2.5/data/binding/pkg
+- /api/v2.5/data/binding/pkg.html
+- /api/v2.6/data/binding/pkg
+- /api/v2.6/data/binding/pkg.html
+- /api/v2.7/data/binding/pkg
+- /api/v2.7/data/binding/pkg.html (package)
 
 aliases:
 - /api/data/binding

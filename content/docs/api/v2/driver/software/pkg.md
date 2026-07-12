@@ -1,7 +1,27 @@
 ---
 tags: [api]
 title: software (package)
-slug: (package)
+slug: pkg
+
+aliases:
+- /api/driver/software/pkg
+- /api/driver/software/pkg.html
+- /api/v2.0/driver/software/pkg
+- /api/v2.0/driver/software/pkg.html
+- /api/v2.1/driver/software/pkg
+- /api/v2.1/driver/software/pkg.html
+- /api/v2.2/driver/software/pkg
+- /api/v2.2/driver/software/pkg.html
+- /api/v2.3/driver/software/pkg
+- /api/v2.3/driver/software/pkg.html
+- /api/v2.4/driver/software/pkg
+- /api/v2.4/driver/software/pkg.html
+- /api/v2.5/driver/software/pkg
+- /api/v2.5/driver/software/pkg.html
+- /api/v2.6/driver/software/pkg
+- /api/v2.6/driver/software/pkg.html
+- /api/v2.7/driver/software/pkg
+- /api/v2.7/driver/software/pkg.html (package)
 
 aliases:
 - /api/driver/software
@@ -35,24 +55,6 @@ import "fyne.io/fyne/v2/driver/software"
 
 ## Usage
 
-#### func  NewCanvas
-
-```go
-func NewCanvas() test.WindowlessCanvas
-```
-NewCanvas creates a new canvas in memory that can render without hardware support.
-
-#### func  NewTransparentCanvas
-
-```go
-func NewTransparentCanvas() test.WindowlessCanvas
-```
-NewTransparentCanvas creates a new canvas in memory that can render without hardware support without a background color.
-
-
-<div class="since">Since: <code>
-2.2</code></div>
-
 #### func  Render
 
 ```go
@@ -68,3 +70,5 @@ func RenderCanvas(c fyne.Canvas, t fyne.Theme) image.Image
 RenderCanvas takes a canvas and renders it to a regular Go image using the provided Theme. This is the same as setting the application theme and then calling Canvas.Capture().
 
 #### types
+
+ * [WindowlessCanvas](windowlesscanvas.html)

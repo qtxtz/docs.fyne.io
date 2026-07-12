@@ -37,9 +37,11 @@ import "fyne.io/fyne/v2/test"
 #### type SoftwarePainter
 
 ```go
-type SoftwarePainter interface {
-	Paint(fyne.Canvas) image.Image
-}
+type SoftwarePainter = fynedriver.Painter
 ```
 
 SoftwarePainter describes a simple type that can render canvases
+
+
+<div class="deprecated">
+Deprecated: Use driver.Painter instead.</div>

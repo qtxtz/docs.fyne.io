@@ -93,6 +93,28 @@ func NewLabelWithStyle(text string, alignment fyne.TextAlign, style fyne.TextSty
 ```
 NewLabelWithStyle creates a new label widget with the set text content
 
+#### func (*Label) AccessibilityLabel
+
+```go
+func (l *Label) AccessibilityLabel() string
+```
+AccessibilityLabel for a label is just the text for that label.
+
+
+<div class="since">Since: <code>
+2.8</code></div>
+
+#### func (*Label) AccessibilityRole
+
+```go
+func (l *Label) AccessibilityRole() fyne.AccessibleRole
+```
+AccessibilityRole for a label is fyne.AccessibleRoleText.
+
+
+<div class="since">Since: <code>
+2.8</code></div>
+
 #### func (*Label) Bind
 
 ```go

@@ -82,19 +82,12 @@ func (p *PopUp) MinSize() fyne.Size
 ```
 MinSize returns the size that this widget should not shrink below
 
-#### func (*PopUp) Move
+#### func (*PopUp) Refresh
 
 ```go
-func (p *PopUp) Move(pos fyne.Position)
+func (p *PopUp) Refresh()
 ```
-Move the widget to a new position. A PopUp position is absolute to the top, left of its canvas. For PopUp this actually moves the content so checking Position() will not return the same value as is set here.
-
-#### func (*PopUp) Resize
-
-```go
-func (p *PopUp) Resize(size fyne.Size)
-```
-Resize changes the size of the PopUp's content. PopUps always have the size of their canvas, but this call updates the size of the content portion.
+Refresh the background for a modal popup and the content of this popup.
 
 #### func (*PopUp) Show
 
@@ -122,13 +115,13 @@ Since 2.4
 #### func (*PopUp) Tapped
 
 ```go
-func (p *PopUp) Tapped(e *fyne.PointEvent)
+func (p *PopUp) Tapped(*fyne.PointEvent)
 ```
-Tapped is called when the user taps the popUp. If not modal and the tap is outside the content area, then dismiss this widget
+Tapped is called when the user taps the popUp. This is not called when tapping the background, but non-modal popups will dismiss when tapped outside.
 
 #### func (*PopUp) TappedSecondary
 
 ```go
-func (p *PopUp) TappedSecondary(e *fyne.PointEvent)
+func (p *PopUp) TappedSecondary(*fyne.PointEvent)
 ```
-TappedSecondary is called when the user right/alt taps the popUp. If not modal and the tap is outside the content area, then dismiss this widget
+TappedSecondary is called when the user right/alt taps the popUp. This is not called when tapping the background, but non-modal popups will dismiss when tapped outside.

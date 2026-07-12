@@ -1,7 +1,27 @@
 ---
 tags: [api]
 title: repository (package)
-slug: (package)
+slug: pkg
+
+aliases:
+- /api/storage/repository/pkg
+- /api/storage/repository/pkg.html
+- /api/v2.0/storage/repository/pkg
+- /api/v2.0/storage/repository/pkg.html
+- /api/v2.1/storage/repository/pkg
+- /api/v2.1/storage/repository/pkg.html
+- /api/v2.2/storage/repository/pkg
+- /api/v2.2/storage/repository/pkg.html
+- /api/v2.3/storage/repository/pkg
+- /api/v2.3/storage/repository/pkg.html
+- /api/v2.4/storage/repository/pkg
+- /api/v2.4/storage/repository/pkg.html
+- /api/v2.5/storage/repository/pkg
+- /api/v2.5/storage/repository/pkg.html
+- /api/v2.6/storage/repository/pkg
+- /api/v2.6/storage/repository/pkg.html
+- /api/v2.7/storage/repository/pkg
+- /api/v2.7/storage/repository/pkg.html (package)
 
 aliases:
 - /api/storage/repository

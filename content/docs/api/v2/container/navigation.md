@@ -42,8 +42,8 @@ type Navigation struct {
 
 	Root      fyne.CanvasObject
 	Title     string
-	OnBack    func()
-	OnForward func()
+	OnBack    func() `json:"-"`
+	OnForward func() `json:"-"`
 }
 ```
 
@@ -97,7 +97,7 @@ func (nav *Navigation) CreateRenderer() fyne.WidgetRenderer
 ```go
 func (nav *Navigation) Forward() fyne.CanvasObject
 ```
-Forward shows the next object in the stack again.
+Forward shows the next object in the stack again and returns the object that was visible before.
 
 
 <div class="since">Since: <code>

@@ -78,6 +78,28 @@ func NewHyperlinkWithStyle(text string, url *url.URL, alignment fyne.TextAlign, 
 ```
 NewHyperlinkWithStyle creates a new hyperlink widget with the set text content
 
+#### func (*Hyperlink) AccessibilityLabel
+
+```go
+func (hl *Hyperlink) AccessibilityLabel() string
+```
+AccessibilityLabel for a hyperlink is the text for the link.
+
+
+<div class="since">Since: <code>
+2.8</code></div>
+
+#### func (*Hyperlink) AccessibilityRole
+
+```go
+func (hl *Hyperlink) AccessibilityRole() fyne.AccessibleRole
+```
+AccessibilityRole for a hyperlink is fyne.AccessibleRoleLink.
+
+
+<div class="since">Since: <code>
+2.8</code></div>
+
 #### func (*Hyperlink) CreateRenderer
 
 ```go

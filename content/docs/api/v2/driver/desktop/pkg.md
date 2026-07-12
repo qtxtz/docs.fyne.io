@@ -1,7 +1,27 @@
 ---
 tags: [api]
 title: desktop (package)
-slug: (package)
+slug: pkg
+
+aliases:
+- /api/driver/desktop/pkg
+- /api/driver/desktop/pkg.html
+- /api/v2.0/driver/desktop/pkg
+- /api/v2.0/driver/desktop/pkg.html
+- /api/v2.1/driver/desktop/pkg
+- /api/v2.1/driver/desktop/pkg.html
+- /api/v2.2/driver/desktop/pkg
+- /api/v2.2/driver/desktop/pkg.html
+- /api/v2.3/driver/desktop/pkg
+- /api/v2.3/driver/desktop/pkg.html
+- /api/v2.4/driver/desktop/pkg
+- /api/v2.4/driver/desktop/pkg.html
+- /api/v2.5/driver/desktop/pkg
+- /api/v2.5/driver/desktop/pkg.html
+- /api/v2.6/driver/desktop/pkg
+- /api/v2.6/driver/desktop/pkg.html
+- /api/v2.7/driver/desktop/pkg
+- /api/v2.7/driver/desktop/pkg.html (package)
 
 aliases:
 - /api/driver/desktop
@@ -102,3 +122,4 @@ const (
  * [MouseEvent](mouseevent.html)
  * [Mouseable](mouseable.html)
  * [StandardCursor](standardcursor.html)
+ * [Window](window.html)

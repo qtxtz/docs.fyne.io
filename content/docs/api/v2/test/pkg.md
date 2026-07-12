@@ -1,7 +1,27 @@
 ---
 tags: [api]
 title: test (package)
-slug: (package)
+slug: pkg
+
+aliases:
+- /api/test/pkg
+- /api/test/pkg.html
+- /api/v2.0/test/pkg
+- /api/v2.0/test/pkg.html
+- /api/v2.1/test/pkg
+- /api/v2.1/test/pkg.html
+- /api/v2.2/test/pkg
+- /api/v2.2/test/pkg.html
+- /api/v2.3/test/pkg
+- /api/v2.3/test/pkg.html
+- /api/v2.4/test/pkg
+- /api/v2.4/test/pkg.html
+- /api/v2.5/test/pkg
+- /api/v2.5/test/pkg.html
+- /api/v2.6/test/pkg
+- /api/v2.6/test/pkg.html
+- /api/v2.7/test/pkg
+- /api/v2.7/test/pkg.html (package)
 
 aliases:
 - /api/test
@@ -63,6 +83,17 @@ AssertCanvasTappableAt asserts that the canvas is tappable at the given position
 func AssertImageMatches(t *testing.T, masterFilename string, img image.Image, msgAndArgs ...any) bool
 ```
 AssertImageMatches asserts that the given image is the same as the one stored in the master file. The master filename is relative to the `testdata` directory which is relative to the test. The test `t` fails if the given image is not equal to the loaded master image. In this case the given image is written into a file in `testdata/failed/<masterFilename>` (relative to the test). This path is also reported, thus the file can be used as new master.
+
+#### func  AssertNotificationScheduled
+
+```go
+func AssertNotificationScheduled(t *testing.T, n *fyne.Notification, f func())
+```
+AssertNotificationScheduled checks that a notification was scheduled for delivery after the supplied function has run. The reported [fyne.ScheduledNotification.Title] and [fyne.ScheduledNotification.Content] must match the supplied notification.
+
+
+<div class="since">Since: <code>
+2.8</code></div>
 
 #### func  AssertNotificationSent
 
@@ -141,12 +172,20 @@ func FocusNext(c fyne.Canvas)
 ```
 FocusNext focuses the next focusable on the canvas.
 
+
+<div class="deprecated">
+Deprecated: Use fyne.Canvas#FocusNext() instead.</div>
+
 #### func  FocusPrevious
 
 ```go
 func FocusPrevious(c fyne.Canvas)
 ```
 FocusPrevious focuses the previous focusable on the canvas.
+
+
+<div class="deprecated">
+Deprecated: Use fyne.Canvas#FocusPrevious() instead.</div>
 
 #### func  KnownThemeVariants
 
@@ -176,6 +215,20 @@ func NewApp() fyne.App
 ```
 NewApp returns a new dummy app used for testing. It loads a test driver which creates a virtual window in memory for testing.
 
+#### func  NewCanvas
+
+```go
+func NewCanvas() software.WindowlessCanvas
+```
+NewCanvas returns a single use in-memory canvas used for testing. This canvas has no painter so calls to Capture() will return a blank image.
+
+#### func  NewCanvasWithPainter
+
+```go
+func NewCanvasWithPainter(painter fynedriver.Painter) software.WindowlessCanvas
+```
+NewCanvasWithPainter allows creation of an in-memory canvas with a specific painter. The painter will be used to render in the Capture() call.
+
 #### func  NewClipboard
 
 ```go
@@ -193,7 +246,7 @@ NewDriver sets up and registers a new dummy driver for test purpose
 #### func  NewDriverWithPainter
 
 ```go
-func NewDriverWithPainter(painter SoftwarePainter) fyne.Driver
+func NewDriverWithPainter(painter fynedriver.Painter) fyne.Driver
 ```
 NewDriverWithPainter creates a new dummy driver that will pass the given painter to all canvases created
 
@@ -225,6 +278,17 @@ NewTempWindow creates and registers a new window for test purposes. This window 
 func NewTheme() fyne.Theme
 ```
 NewTheme returns a new test theme using quiet ugly colors.
+
+#### func  NewTransparentCanvasWithPainter
+
+```go
+func NewTransparentCanvasWithPainter(painter fynedriver.Painter) software.WindowlessCanvas
+```
+NewTransparentCanvasWithPainter allows creation of an in-memory canvas with a specific painter without a background color. The painter will be used to render in the Capture() call.
+
+
+<div class="since">Since: <code>
+2.2</code></div>
 
 #### func  NewWindow
 

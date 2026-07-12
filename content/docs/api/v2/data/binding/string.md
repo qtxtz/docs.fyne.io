@@ -123,6 +123,17 @@ IntToStringWithFormat creates a binding that connects a Int data item to a Strin
 <div class="since">Since: <code>
 2.0</code></div>
 
+#### func  ItemToString
+
+```go
+func ItemToString[T any](v Item[T], formatter func(T) (string, error), parser func(string) (T, error), comparator func(T, T) bool) String
+```
+ItemToString creates a binding that connects a generic data item to a String.
+
+
+<div class="since">Since: <code>
+2.8</code></div>
+
 #### func  NewSprintf
 
 ```go

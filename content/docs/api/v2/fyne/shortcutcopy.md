@@ -39,6 +39,10 @@ import "fyne.io/fyne/v2"
 ```go
 type ShortcutCopy struct {
 	Clipboard Clipboard
+	// Secondary indicates an alternative buffer such as selection, when true
+	//
+	// Since: 2.8
+	Secondary bool
 }
 ```
 

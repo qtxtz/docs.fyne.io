@@ -73,8 +73,30 @@ func (m *MultipleWindows) Add(w *InnerWindow)
 func (m *MultipleWindows) CreateRenderer() fyne.WidgetRenderer
 ```
 
+#### func (*MultipleWindows) RaiseToTop
+
+```go
+func (m *MultipleWindows) RaiseToTop(w *InnerWindow)
+```
+RaiseToTop asks this multiple window container to raise a specific inner window above others.
+
+
+<div class="since">Since: <code>
+2.8</code></div>
+
 #### func (*MultipleWindows) Refresh
 
 ```go
 func (m *MultipleWindows) Refresh()
 ```
+
+#### func (*MultipleWindows) Top
+
+```go
+func (m *MultipleWindows) Top() *InnerWindow
+```
+Top returns the topmost window in this multiple stack (the one visible above all others). If there are no windows it will return nil.
+
+
+<div class="since">Since: <code>
+2.8</code></div>

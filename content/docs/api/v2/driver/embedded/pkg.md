@@ -1,7 +1,27 @@
 ---
 tags: [api]
 title: embedded (package)
-slug: (package)
+slug: pkg
+
+aliases:
+- /api/driver/embedded/pkg
+- /api/driver/embedded/pkg.html
+- /api/v2.0/driver/embedded/pkg
+- /api/v2.0/driver/embedded/pkg.html
+- /api/v2.1/driver/embedded/pkg
+- /api/v2.1/driver/embedded/pkg.html
+- /api/v2.2/driver/embedded/pkg
+- /api/v2.2/driver/embedded/pkg.html
+- /api/v2.3/driver/embedded/pkg
+- /api/v2.3/driver/embedded/pkg.html
+- /api/v2.4/driver/embedded/pkg
+- /api/v2.4/driver/embedded/pkg.html
+- /api/v2.5/driver/embedded/pkg
+- /api/v2.5/driver/embedded/pkg.html
+- /api/v2.6/driver/embedded/pkg
+- /api/v2.6/driver/embedded/pkg.html
+- /api/v2.7/driver/embedded/pkg
+- /api/v2.7/driver/embedded/pkg.html (package)
 
 aliases:
 - /api/driver/embedded

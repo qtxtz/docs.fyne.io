@@ -1,7 +1,27 @@
 ---
 tags: [api]
 title: validation (package)
-slug: (package)
+slug: pkg
+
+aliases:
+- /api/data/validation/pkg
+- /api/data/validation/pkg.html
+- /api/v2.0/data/validation/pkg
+- /api/v2.0/data/validation/pkg.html
+- /api/v2.1/data/validation/pkg
+- /api/v2.1/data/validation/pkg.html
+- /api/v2.2/data/validation/pkg
+- /api/v2.2/data/validation/pkg.html
+- /api/v2.3/data/validation/pkg
+- /api/v2.3/data/validation/pkg.html
+- /api/v2.4/data/validation/pkg
+- /api/v2.4/data/validation/pkg.html
+- /api/v2.5/data/validation/pkg
+- /api/v2.5/data/validation/pkg.html
+- /api/v2.6/data/validation/pkg
+- /api/v2.6/data/validation/pkg.html
+- /api/v2.7/data/validation/pkg
+- /api/v2.7/data/validation/pkg.html (package)
 
 aliases:
 - /api/data/validation

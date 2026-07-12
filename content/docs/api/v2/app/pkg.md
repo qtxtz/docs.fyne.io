@@ -1,7 +1,27 @@
 ---
 tags: [api]
 title: app (package)
-slug: (package)
+slug: pkg
+
+aliases:
+- /api/app/pkg
+- /api/app/pkg.html
+- /api/v2.0/app/pkg
+- /api/v2.0/app/pkg.html
+- /api/v2.1/app/pkg
+- /api/v2.1/app/pkg.html
+- /api/v2.2/app/pkg
+- /api/v2.2/app/pkg.html
+- /api/v2.3/app/pkg
+- /api/v2.3/app/pkg.html
+- /api/v2.4/app/pkg
+- /api/v2.4/app/pkg.html
+- /api/v2.5/app/pkg
+- /api/v2.5/app/pkg.html
+- /api/v2.6/app/pkg
+- /api/v2.6/app/pkg.html
+- /api/v2.7/app/pkg
+- /api/v2.7/app/pkg.html (package)
 
 aliases:
 - /api/app

@@ -68,6 +68,28 @@ func NewButtonWithIcon(label string, icon fyne.Resource, tapped func()) *Button
 ```
 NewButtonWithIcon creates a new button widget with the specified label, themed icon and tap handler
 
+#### func (*Button) AccessibilityLabel
+
+```go
+func (b *Button) AccessibilityLabel() string
+```
+AccessibilityLabel for a button is the text, if there is some, otherwise the name of the icon.
+
+
+<div class="since">Since: <code>
+2.8</code></div>
+
+#### func (*Button) AccessibilityRole
+
+```go
+func (b *Button) AccessibilityRole() fyne.AccessibleRole
+```
+AccessibilityRole for a button is fyne.AccessibleRoleButton.
+
+
+<div class="since">Since: <code>
+2.8</code></div>
+
 #### func (*Button) CreateRenderer
 
 ```go

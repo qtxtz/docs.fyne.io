@@ -1,7 +1,27 @@
 ---
 tags: [api]
 title: storage (package)
-slug: (package)
+slug: pkg
+
+aliases:
+- /api/storage/pkg
+- /api/storage/pkg.html
+- /api/v2.0/storage/pkg
+- /api/v2.0/storage/pkg.html
+- /api/v2.1/storage/pkg
+- /api/v2.1/storage/pkg.html
+- /api/v2.2/storage/pkg
+- /api/v2.2/storage/pkg.html
+- /api/v2.3/storage/pkg
+- /api/v2.3/storage/pkg.html
+- /api/v2.4/storage/pkg
+- /api/v2.4/storage/pkg.html
+- /api/v2.5/storage/pkg
+- /api/v2.5/storage/pkg.html
+- /api/v2.6/storage/pkg
+- /api/v2.6/storage/pkg.html
+- /api/v2.7/storage/pkg
+- /api/v2.7/storage/pkg.html (package)
 
 aliases:
 - /api/storage
