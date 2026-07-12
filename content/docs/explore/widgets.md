@@ -35,13 +35,13 @@ aliases:
 
 ### Accordion
 
-[Accordion](/api/widget/accordion) displays a list of AccordionItems. Each item is represented by a button that reveals a detailed view when tapped.
+[Accordion](/widget/accordion) displays a list of AccordionItems. Each item is represented by a button that reveals a detailed view when tapped.
 
 {{% widget name="accordion" %}}
 
 ### Activity
 
-[Activity](/api/widget/activity) Display an animated activity indicator.
+[Activity](/widget/activity) Display an animated activity indicator.
 
 {{% widget name="activity" %}}
 
@@ -57,13 +57,13 @@ You can also set Button Importance to show buttons that need to stand out, for e
 
 ### Card
 
-[Card](/api/widget/card) widget groups elements with a header and subheader, all are optional.
+[Card](/widget/card) widget groups elements with a header and subheader, all are optional.
 
 {{% widget name="card" %}}
 
 ### Check
 
-[Check](/api/widget/check) widget has a text label and a checked (or unchecked) icon.
+[Check](/widget/choices) widget has a text label and a checked (or unchecked) icon.
 
 {{% widget name="check" %}}
 
@@ -81,7 +81,7 @@ You can also set Button Importance to show buttons that need to stand out, for e
 
 ### FileIcon
 
-[FileIcon](/api/widget/fileicon) provides helpful standard icons for various types of file.
+[FileIcon](/widget/fileicon) provides helpful standard icons for various types of file.
 It displays the type of file as an indicator icon and shows the extension of the file type.
 
 {{% widget name="fileicon" %}}
@@ -94,13 +94,13 @@ It displays the type of file as an indicator icon and shows the extension of the
 
 ### Hyperlink
 
-[Hyperlink](/api/widget/hyperlink) widget is a text component with appropriate padding and layout. When clicked, the URL opens in your default web browser.
+[Hyperlink](/widget/hyperlink) widget is a text component with appropriate padding and layout. When clicked, the URL opens in your default web browser.
 
 {{% widget name="hyperlink" %}}
 
 ### Icon
 
-[Icon](/api/widget/icon) widget is a basic image component that loads its resource to match the theme.
+[Icon](/widget/icon) widget is a basic image component that loads its resource to match the theme.
 
 {{% widget name="icon" %}}
 
@@ -112,7 +112,7 @@ It displays the type of file as an indicator icon and shows the extension of the
 
 ### PopUp
 
-The generic [PopUp](/api/widget/popup) widget can be used to pop any small content over an app.
+The generic [PopUp](/widget/popup) widget can be used to pop any small content over an app.
 But the most useful is normally the [PopUpMenu](/api/widget/popupmenu) which looks like the following:
 
 {{% widget name="popupmenu" %}}
@@ -129,45 +129,45 @@ But the most useful is normally the [PopUpMenu](/api/widget/popupmenu) which loo
 
 ### RadioGroup
 
-[RadioGroup](/api/widget/radiogroup) widget has a list of text labels and radio check icons next to each.
+[RadioGroup](/widget/choices) widget has a list of text labels and radio check icons next to each.
 
 {{% widget name="radiogroup" %}}
 
 ### RichText
 
-[RichText](/api/widget/richtext) widget is a text component that shows various styles and embedded objects.
+[RichText](/widget/richtext) widget is a text component that shows various styles and embedded objects.
 It supports markdown parsing to construct the widget with ease.
 
 {{% widget name="richtext" %}}
 
 ### Select
 
-[Select](/api/widget/select) widget has a list of options, with the current one shown, and triggers an event function when clicked.
+[Select](/widget/choices) widget has a list of options, with the current one shown, and triggers an event function when clicked.
 
 {{% widget name="select" %}}
 
 ### SelectEntry
 
-[SelectEntry](/api/widget/selectentry) widget adds an editable component to the select widget.
+[SelectEntry](/widget/selectentry) widget adds an editable component to the select widget.
 Users can select an option or enter their own value.
 
 {{% widget name="selectentry" %}}
 
 ### Separator
 
-[Separator](/api/widget/separator) widget shows a dividing line between other elements.
+[Separator](/widget/separator) widget shows a dividing line between other elements.
 
 {{% widget name="separator" %}}
 
 ### Slider
 
-[Slider](/api/widget/slider) if a widget that can slide between two fixed values.
+[Slider](/widget/slider) if a widget that can slide between two fixed values.
 
 {{% widget name="slider" %}}
 
 ### TextGrid
 
-[TextGrid](/api/widget/textgrid) is a monospaced grid of characters. This is designed to be used by a text editor, code preview or terminal emulator.
+[TextGrid](/widget/textgrid) is a monospaced grid of characters. This is designed to be used by a text editor, code preview or terminal emulator.
 
 {{% widget name="textgrid" %}}
 
@@ -204,7 +204,7 @@ Each of these widgets uses a series of callbacks, the minimum set is defined by 
 
 ### GridWrap
 
-[GridWrap](/api/widget/gridwrap) is a collection widget that display each child item at the same size and wraps them to new lines as required.
+[GridWrap](/collection/gridwrap) is a collection widget that display each child item at the same size and wraps them to new lines as required.
 
 {{% widget name="gridwrap" %}}
 
@@ -221,30 +221,30 @@ Container widgets are like regular containers but they provide some additional f
 
 ### Clip
 
-[Clip](/api/container/clip) is a container that shows only a portion of the Content, as defined by the size of the clip.
+[Clip](/container/clip) is a container that shows only a portion of the Content, as defined by the size of the clip.
 
 {{% widget name="clip" %}}
 
 ### DocTabs
 
-[DocTabs](/api/container/doctabs) widget allows managing multiple open files, users can close these tabs and open new ones (if your code supports that). Each item is represented by a tab at the top of the widget that will also include a close button. Other edges can be specified by setting the `TabLocation` field.
+[DocTabs](/container/doctabs) widget allows managing multiple open files, users can close these tabs and open new ones (if your code supports that). Each item is represented by a tab at the top of the widget that will also include a close button. Other edges can be specified by setting the `TabLocation` field.
 
 {{% widget name="doctabs" %}}
 
 ### Navigation
 
-The [Navigation](/api/container/navigation) container provides a stack based navigation where items can be `Push`ed onto and the user can nagivate back and forwards.
+The [Navigation](/container/navigation) container provides a stack based navigation where items can be `Push`ed onto and the user can nagivate back and forwards.
 
 {{% widget name="navigation" %}}
 
 ### Scroll
 
-A [Scroll](/api/container/scroll) container defines an area that is smaller than the Content, providing scrollbars as required.
+A [Scroll](/container/scroll) container defines an area that is smaller than the Content, providing scrollbars as required.
 
 {{% widget name="scroll" %}}
 
 ### Split
 
-The [Split](/api/container/split) container defines a container whose size is split between two children.
+The [Split](/container/split) container defines a container whose size is split between two children.
 
 {{% widget name="split" %}}
